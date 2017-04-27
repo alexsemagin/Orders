@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="?android:attr/listPreferredItemHeight"
+	android:background="#e8eaf6"
+	android:gravity="center_vertical"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/materialize_screen_edge"
+		android:layout_marginStart="@dimen/materialize_screen_edge"
+		android:layout_marginRight="@dimen/materialize_screen_edge"
+		android:layout_marginEnd="@dimen/materialize_screen_edge"
+		android:maxLines="1"
+		android:textAppearance="@style/TextAppearance.AppCompat.Button"
+		tools:text="Staggered Layout"/>
+
+	<TextView
+		android:id="@+id/subtitle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="2dp"
+		android:layout_marginLeft="@dimen/materialize_screen_edge"
+		android:layout_marginStart="@dimen/materialize_screen_edge"
+		android:layout_marginRight="@dimen/materialize_screen_edge"
+		android:layout_marginEnd="@dimen/materialize_screen_edge"
+		android:ellipsize="end"
+		android:maxLines="1"
+		android:textAppearance="@style/TextAppearance.AppCompat.Small"
+		tools:text="%1$s column(s)"/>
+
+</LinearLayout>

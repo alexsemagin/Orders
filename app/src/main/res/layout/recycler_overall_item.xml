@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/label_card"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:foreground="?android:attr/selectableItemBackground"
+	card_view:cardUseCompatPadding="true"
+	card_view:cardElevation="2dp"
+	card_view:cardCornerRadius="1dp">
+
+
+
+	<ImageView
+		android:id="@+id/label_background"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingTop="10dp"
+		android:paddingBottom="10dp"
+		android:alpha="0.1"
+		android:scaleType="fitCenter"
+		card_view:srcCompat="@drawable/vector_account"/>
+
+	<LinearLayout
+		android:id="@+id/name_container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="@dimen/materialize_screen_edge"
+		android:layout_marginStart="@dimen/materialize_screen_edge"
+		android:layout_marginRight="@dimen/materialize_screen_edge"
+		android:layout_marginEnd="@dimen/materialize_screen_edge"
+		android:layout_marginTop="@dimen/materialize_screen_edge"
+		android:layout_marginBottom="@dimen/materialize_screen_edge"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:ellipsize="end"
+			android:lines="2"
+			android:maxLines="2"
+			android:textAppearance="@style/TextAppearance.AppCompat.Title"
+			tools:text="Endless Scrolling"/>
+
+		<TextView
+			android:id="@+id/subtitle"
+			android:layout_marginTop="2dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:ellipsize="end"
+			android:textAppearance="@style/TextAppearance.AppCompat.Small"
+			tools:text="EndlessScrolling + Drag + Swipe-To-Delete w/rear-views + Scroll Animations + ActionModeHelper + UndoHelper + Scrollable Headers and Footers"/>
+
+	</LinearLayout>
+
+</android.support.v7.widget.CardView>

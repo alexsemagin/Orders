@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Выездной сотрудник</string>
+
+    <!--    Экран авторизации   -->
+    <string name="title_splash">Выездной сотрудник</string>
+    <string name="your_password">Введите пароль</string>
+
+    <!--    Экран списка заявок   -->
+    <string name="title_order_list">Список заявок</string>
+    <string name="tab_my_orders">Мои</string>
+    <string name="tab_free_orders">Свободные</string>
+    <string name="sort_by_time_title">По времени</string>
+    <string name="sort_by_distance_title">По расстоянию</string>
+    <string name="sort_by_sum_title">По сумме</string>
+
+    <!--    Экран карты списка заявок   -->
+    <string name="menu_map_list">Карта</string>
+
+    <!--    Экран настроек  -->
+    <string name="title_settings">Настройки</string>
+
+    <string name="dialog_positive_button_title">принять</string>
+    <string name="dialog_negative_button_title">отмена</string>
+    <string name="pref_connection_settings_header">Настройки соединения</string>
+    <string name="pref_server_address_name">Адрес сервера</string>
+    <string name="pref_alternative_server_name">Альтернативный сервер</string>
+    <string name="pref_alternative_server_address_name">Адрес альтернативного сервера</string>
+    <string name="pref_device_name">Название устройства</string>
+    <string name="pref_update_period_name">Частота проверки</string>
+
+    <string name="pref_behavior_settings_header">Настройки поведения</string>
+    <string name="pref_card_scan_name">Режим сканирования карт</string>
+    <string name="pref_check_menu_price_pref">Актуальность цен меню</string>
+    <string name="pref_ask_further_action_pref">Запрашивать дальнейшие действия</string>
+    <string name="pref_ask_guest_number_pref">Запрашивать количество поситителей</string>
+    <string name="pref_coursed_work_pref">Включить работу с курсами</string>
+    <string name="pref_delay_step_on_the_dish_name">Шаг изменения задержки по блюду</string>
+    <string name="pref_step_delay_on_the_course">Шаг изменения задержки для курса</string>
+
+    <string name="pref_display_settings_header">Настройки отображения</string>
+    <string name="pref_organization_name">Название организации</string>
+    <string name="pref_currency_name">Валюта</string>
+
+    <string name="pref_alert_settings_header">Настройки уведомлений</string>
+    <string name="pref_depth_display_message_name">Глубина отоборажения сообщения</string>
+    <string name="pref_melody_name">Мелодия уведомлений</string>
+
+    <!--    Оповещения запроса разрешений  -->
+    <string name="read_ext_storage_explanation">Доступ к данным необходим для выбора мелодии уведомлений</string>
+    <string name="permission_canceled">Доступ запрещен</string>
+
+    <!--    Экран диалога настроек  -->
+    <string name="error_snack_message_incorrect_server_url">Неправильный URL</string>
+    <string name="error_snack_message_incorrect_currency">Валюта должна занимать не более трех символов и не содержать цифр</string>
+
+    <!--    Экран выбора мелодии -->
+    <string name="select_ringtone">Выберете мелодию</string>
+    <string name="no_ringtone">Без звука</string>
+
+    <!--    Экран историй операций -->
+    <string name="action_login">Вход в систему</string>
+    <string name="action_login_out">Выход из системы</string>
+    <string name="action_order_add">Добавлена заявка</string>
+    <string name="action_order_canceled">Отменена заявка</string>
+    <string name="action_order">Заявка</string>
+    <string name="action_order_success">выполнен успешно</string>
+    <string name="action_success">Заявка успешна</string>
+
+    <!-- Список фильтров -->
+    <string name="filter_all_actions">Все</string>
+    <string name="filter_login">По входу</string>
+    <string name="filter_logout">По выходу</string>
+    <string name="filter_order_add">По добавленным заявкам</string>
+    <string name="filter_success">По успешным заявкам</string>
+    <string name="filter_order_detach">По освобожденным заявкам</string>
+    <string name="filter_order_canceled">По отмененным заявкам</string>
+    <string name="filter_put_cashbox">По внесению денег</string>
+
+    <!--  <string name="filter_all_actions">Все</string>
+    <string name="filter_login">Вход</string>
+    <string name="filter_logout">Выход</string>
+    <string name="filter_order_add">Добавленные заявки</string>
+    <string name="filter_success">Успешные заявки</string>
+    <string name="filter_order_detach">Освобожденные заявки</string>
+    <string name="filter_order_canceled">Отмененные заявки</string>
+    <string name="filter_put_cashbox">Внесение денег</string>-->
+
+    <!-- Экран О приложении-->
+    <string name="title_about_app">О приложении</string>
+    <string name="about_app_contact_phone">+7 (495) 231&#8211;20&#8211;02</string>
+    <string name="app_info_contact_email">food@rarus.ru</string>
+    <string name="about_app_dev_info">Приложения 1С-Рарус</string>
+    <string name="about_app_version">Версия</string>
+    <string name="about_app_year_info">© 2017, 1C-Рарус</string>
+    <string name="about_app_write_email">Написать E-mail</string>
+
+    <!-- OrderView -->
+    <string name="order_num">Номер заявки</string>
+    <string name="order_client">Клиент</string>
+    <string name="order_address">Адресс</string>
+    <string name="order_sum">Сумма</string>
+    <string name="order_phone">Номер телефона</string>
+    <string name="order_items">Состав заявки</string>
+
+    <!--    Permissions  -->
+    <string name="permission_fine_loc_rationale">Access fine location permission is needed to show your location on map</string>
+    <string name="text_cancel">Отмена</string>
+    <string name="text_input_pass">Введите пароль</string>
+    <string name="order_list_empty">Нет заявок</string>
+    <string name="order_list_refresh">Обновить</string>
+    <string name="text_no_connect1">Нет подключения</string>
+    <string name="text_no_connect2">Потяните вниз, чтобы обновить</string>
+    <string name="text_no_history_sale1">Нет заявок</string>
+    <string name="text_no_history_sale2">Потяните вниз, чтобы обновить</string>
+
+
+    <string name="drawer_item_orders">Мои заявки</string>
+    <string name="drawer_item_current">Текущий счет</string>
+    <string name="drawer_item_history">История операций</string>
+    <string name="drawer_item_call">Вызов оператора</string>
+    <string name="drawer_item_settings">Настройки</string>
+    <string name="drawer_item_about_app">О приложении</string>
+    <string name="drawer_item_sign_out">Выйти</string>
+    <string name="text_cancel_2">Отменить</string>
+    <string name="text_free">Освободить</string>
+    <string name="text_complete">Завершить</string>
+    <string name="text_money_back">подготовить сдачу</string>
+    <string name="text_money_backed">сдача</string>
+    <string name="text_order_pay_ok">не оплачено</string>
+    <string name="text_discount">Скидка</string>
+    <string name="text_total_sum">Итого к оплате</string>
+    <string name="text_percent_0">0%</string>
+    <string name="text_call_office">Связаться с офисом</string>
+    <string name="text_no_comments">Нет комментариев</string>
+    <string name="text_accept_order">Взять заявку</string>
+    <string name="text_pay_complete">оплачено</string>
+    <string name="text_dialog_title_attach_order">Взять заявку?</string>
+    <string name="text_yes">Да</string>
+    <string name="text_dialog_cancel_order">Освободить заявку?</string>
+    <string name="text_send_data_to_server">Обмен данными</string>
+    <string name="text_what_use">Что использовать?</string>
+    <string name="text_setup_yandex_map">Установить Яндекс.Карты?</string>
+    <string name="text_app_yandex_map_not_found">Приложение Яндекс.Карты не найдено</string>
+    <string name="text_select">Выбрать</string>
+
+
+    <!-- Экран Текущего счета -->
+    <string name="account_toolbar_title">Текущий счет</string>
+    <string name="account_orders_in_work">Заявки в работе</string>
+    <string name="account_orders_completed">Завершенные</string>
+    <string name="account_orders_not_completed">Невыполненные</string>
+    <string name="account_cash">Наличные на руках</string>
+    <string name="account_total_score">Сдано в кассу</string>
+    <string name="account_count">Кол-во:\u00A0</string>
+    <string name="account_dummy_zero">0</string>
+    <string name="account_dummy_cash">1050,50</string>
+    <string name="account_dummy_total_score">2000,00</string>
+    <string name="account_set_to_zero">ОБНУЛИТЬ СЧЕТ</string>
+    <string name="account_yes">Да</string>
+    <string name="account_no">Отмена</string>
+    <string name="account_drop_promt">Обнулить счет?</string>
+    <string name="account_drop_promt_1">Подтвердить внесение</string>
+    <string name="account_drop_promt_2">в основную кассу</string>
+
+    <string name="text_not_found_geo_map">Не удалось определить координаты адреса доставки</string>
+    <string name="text_not_set_address_delivery">Не указан адрес доставки</string>
+    <string name="text_complete_order">Завершить заявку?</string>
+    <string name="text_confirm_order">Подтвердить получение</string>
+    <string name="text_calculete_time">Обновлено время в пути для свободных заявок</string>
+    <string name="text_open_order">Открыть</string>
+
+
+    <!-- Диалог вызова оператора -->
+    <string name="text_operator_call_title">Позвонить оператору?</string>
+    <string name="text_operator_call_negative">Отмена</string>
+    <string name="text_operator_call_positive">Да</string>
+    <string name="text_current_location">Текущая локация</string>
+    <string name="text_order_detach">Освобождена заявка</string>
+    <string name="text_no_right">Нет прав. Установите права курьера</string>
+    <string name="text_reason_cancel_order">Причины отмены заявки</string>
+    <string name="text_settings_locations">Настройки локации</string>
+    <string name="text_address_point_delivery">Место сбора заявки</string>
+    <string name="text_not_set">Не установлено</string>
+
+    <string name="text_calculate_geo_close">Определение текущих координат запрещено</string>
+    <string name="text_ok">OK</string>
+    <string name="text_set_place_get_order">Укажите место сбора заявок</string>
+    <string name="text_setting_need_for_calculate">Настройка используется для расчета расстояния
+        и времени доставки у “свободных” заявок.</string>
+    <string name="text_in_route_order">У “взятых” заявок расстояние и время доставки
+        рассчитывается от текущего местоположения.</string>
+
+
+    <string name="columns">%1$s column(s)</string>
+    <string name="text_title_cash">Внесение денег в кассу</string>
+    <string name="text_put_cashbox">Внесение денег в кассу</string>
+    <string name="demo_button_text">Демонстрационный доступ</string>
+    <string name="text_new_order">Новая заявка</string>
+    <string name="text_address_order">Выбрать адрес заявки</string>
+    <string name="text_select_date">Установить дату и время</string>
+    <string name="text_date_time">Дата и время заявки</string>
+    <string name="text_set_name">Ввести имя заявителя</string>
+    <string name="text_name_order">Имя</string>
+    <string name="text_cansel">Отмена</string>
+    <string name="text_set_number_phone">Ввести номер телефона</string>
+    <string name="text_add_new">Добавить</string>
+    <string name="text_open_map">Открыть карту</string>
+    <string name="regular_expression">^((8|\\+7)[\\- ]?)?(\\(?\\d{3}\\)?[\\- ]?)?[\\d\\- ]{7,10}$</string>
+    <string name="text_no_info">Нет информации</string>
+    <string name="add_phone_from_contacts">выбрать из контактов</string>
+    <string name="add_phone_from_hystory">выбрать из журнала</string>
+
+
+    <!--Экран истории звонков-->
+    <string name="title_call_log">Журнал вызовов</string>
+    <string name="text_call_log_cancelled">Доступ к журналу звонков запрещен</string>
+    <string name="permission_call_log_rationale">Доступ необходим для выбора из журнала вызовов</string>
+
+    <string name="text_contact_cancelled">Доступ к контактам запрещен</string>
+    <string name="permission_contact_rationale">Доступ необходим для выбора из списка контактов</string>
+
+    <string name="contact_has_number">Номер контакта </string>
+    <string name="contact_has_not_number">Контакт не имеет номера</string>
+
+    <string name="cal_log_item_in_call">Входящий</string>
+    <string name="cal_log_item_out_call">Исходящий</string>
+    <string name="cal_log_item_refused_call">Не принятый</string>
+    <string name="write_db_error_message">Ошибка записи в базу данных</string>
+</resources>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+
+            android:id="@+id/ivAppIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.65"
+            android:adjustViewBounds="true"
+            android:background="@drawable/white_circle"
+            android:contentDescription="@null"
+            android:src="@drawable/app_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/app_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:textAppearance="?android:textAppearanceSmall" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/rarus_apps_clickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_ripple"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/materialize_screen_edge"
+                android:paddingLeft="@dimen/materialize_screen_edge"
+                android:paddingRight="@dimen/materialize_screen_edge"
+                android:paddingStart="@dimen/materialize_screen_edge">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:paddingEnd="32dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="32dp"
+                    android:paddingStart="0dp"
+                    app:srcCompat="@drawable/vector_smartphone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="@dimen/main_padding_16"
+                        android:paddingTop="@dimen/main_padding_16"
+                        android:text="@string/about_app_dev_info"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/md_grey_400" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/call_rarus_clickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_ripple"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/materialize_screen_edge"
+                android:paddingLeft="@dimen/materialize_screen_edge"
+                android:paddingRight="@dimen/materialize_screen_edge"
+                android:paddingStart="@dimen/materialize_screen_edge">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:paddingEnd="32dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="32dp"
+                    android:paddingStart="0dp"
+                    app:srcCompat="@drawable/vector_call" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/contact_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/main_padding_16"
+                        android:paddingTop="@dimen/main_padding_16"
+                        android:text="@string/about_app_contact_phone"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/md_grey_400" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mail_rarus_clickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_ripple"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/materialize_screen_edge"
+                android:paddingLeft="@dimen/materialize_screen_edge"
+                android:paddingRight="@dimen/materialize_screen_edge"
+                android:paddingStart="@dimen/materialize_screen_edge">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:paddingEnd="32dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="32dp"
+                    android:paddingStart="0dp"
+                    app:srcCompat="@drawable/vector_email" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/contact_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/main_padding_16"
+                        android:paddingTop="@dimen/main_padding_16"
+                        android:text="@string/app_info_contact_email"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/md_grey_400" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/keyboard_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/center"
+        android:layout_centerHorizontal="true">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/watermark"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/logo_rarus" />
+
+            <TextView
+                android:id="@+id/copyright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="@string/about_app_year_info"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+

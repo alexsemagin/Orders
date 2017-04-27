@@ -1,0 +1,79 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="main_padding_16">16dp</dimen>
+    <dimen name="main_padding_20">20dp</dimen>
+
+
+    <!--<dimen name="my_padding">4dp</dimen>-->
+    <!--<dimen name="my_margin">2dp</dimen>-->
+
+    <dimen name="small_dialog_height">150dp</dimen>
+    <dimen name="small_dialog_width">350dp</dimen>
+
+
+    <!-- font size -->
+    <dimen name="font_size_display_4">112sp</dimen>
+    <dimen name="font_size_display_3">56sp</dimen>
+    <dimen name="font_size_display_2">45sp</dimen>
+    <dimen name="font_size_display_1">34sp</dimen>
+    <dimen name="font_size_headline">24sp</dimen>
+    <dimen name="font_size_title">32sp</dimen>
+    <dimen name="font_size_subheading">21sp</dimen>
+    <dimen name="font_size_body_2">14sp</dimen>
+    <dimen name="font_size_body_1">14sp</dimen>
+    <dimen name="font_size_caption">12sp</dimen>
+    <!-- button text should be styled with ALL CAPS-->
+    <dimen name="font_size_button">14sp</dimen>
+
+    <!-- metrics & keylines-->
+    <dimen name="horizontal_margin_right">16dp</dimen>
+    <dimen name="horizontal_margin_left">16dp</dimen>
+
+    <dimen name="status_bar_height">24dp</dimen>
+
+
+    <dimen name="subtitle_height">48dp</dimen>
+    <dimen name="list_item_height">48dp</dimen>
+    <dimen name="space_between_content">8dp</dimen>
+
+    <dimen name="strip_height">40dp</dimen>
+    <dimen name="snack_height">48dp</dimen>
+
+    <dimen name="icon_image_height">48dp</dimen>
+    <dimen name="icon_image_width">48dp</dimen>
+
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_content_height">36dp</dimen>
+
+
+    <dimen name="order_create_title_height">48dp</dimen>
+    <dimen name="item_area_object_height">56dp</dimen>
+    <dimen name="item_menu_item_height">72dp</dimen>
+
+    <dimen name="settings_item_height">80dp</dimen>
+
+    <!--list dimens-->
+    <dimen name="font_size_list_item_main">14sp</dimen>
+    <dimen name="font_size_list_sub_item">12sp</dimen>
+
+    <!--dialogs metrics-->
+    <dimen name="dialog_height">300dp</dimen>
+
+
+    <dimen name="item_height">56dp</dimen>
+    <dimen name="order_row_item_height">48dp</dimen>
+
+    <dimen name="number_keyboard_number_text_size">24sp</dimen>
+    <dimen name="number_keyboard_symbol_text_size">16sp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="size_ic">24dp</dimen>
+    <dimen name="main_padding_56">56dp</dimen>
+
+
+    <dimen name="about_app_distance_below_version">16dp</dimen>
+    <dimen name="about_app_logo_height">296dp</dimen>
+
+</resources>

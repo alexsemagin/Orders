@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+				android:id="@+id/account_rl_parent"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="@color/md_grey_100"
+	android:elevation="1dp">
+
+	<LinearLayout
+		android:id="@+id/account_ll_orders_in_work"
+		android:layout_width="match_parent"
+		android:layout_height="72dp"
+		android:background="@drawable/my_ripple"
+		android:orientation="horizontal"
+		android:paddingLeft="@dimen/materialize_screen_edge"
+		android:paddingRight="@dimen/materialize_screen_edge">
+
+		<TextView
+			android:id="@+id/account_tv_orders_in_work_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="start|center_vertical"
+			android:text="@string/account_orders_in_work"
+			android:textAppearance="?android:textAppearanceMedium"/>
+
+		<TextView
+			android:id="@+id/account_tv_orders_in_work_count_title"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:gravity="end"
+			android:text="@string/account_count"
+			android:textAppearance="?android:textAppearanceMedium"/>
+
+		<TextView
+			android:id="@+id/account_tv_orders_in_work_count"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="start|center_vertical"
+			android:text="@string/account_dummy_zero"
+			android:textAppearance="?android:textAppearanceMedium"/>
+
+
+		<FrameLayout
+			android:layout_width="32dp"
+			android:layout_gravity="center_vertical"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:id="@+id/account_iv_orders_in_work_arrow"
+				android:layout_width="16dp"
+				android:layout_height="16dp"
+				android:layout_gravity="center|end"
+				android:contentDescription="@null"
+
+				app:srcCompat="@drawable/arrow_up"/>
+
+		</FrameLayout>
+
+	</LinearLayout>
+
+
+	<!--<LinearLayout-->
+		<!--android:id="@+id/title_container"-->
+		<!--android:layout_width="match_parent"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:layout_marginLeft="@dimen/materialize_screen_edge"-->
+		<!--android:layout_marginStart="@dimen/materialize_screen_edge"-->
+		<!--android:layout_marginRight="@dimen/materialize_screen_edge"-->
+		<!--android:layout_marginEnd="@dimen/materialize_screen_edge"-->
+		<!--android:layout_centerInParent="true"-->
+		<!--android:orientation="vertical">-->
+
+		<!--<TextView-->
+			<!--android:id="@+id/title"-->
+			<!--android:layout_width="match_parent"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:ellipsize="end"-->
+			<!--android:maxLines="1"-->
+			<!--android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse"-->
+			<!--tools:text="Header"/>-->
+
+		<!--<TextView-->
+			<!--android:id="@+id/subtitle"-->
+			<!--android:layout_marginTop="2dp"-->
+			<!--android:layout_width="match_parent"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:ellipsize="end"-->
+			<!--android:maxLines="1"-->
+			<!--android:textAppearance="@style/TextAppearance.AppCompat.Caption"-->
+			<!--tools:text="Subtitle"/>-->
+
+	<!--</LinearLayout>-->
+
+
+	<!--<ImageView-->
+		<!--android:id="@+id/row_handle"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:layout_alignParentEnd="true"-->
+		<!--android:layout_alignParentRight="true"-->
+		<!--android:layout_centerInParent="true"-->
+		<!--android:layout_marginEnd="@dimen/materialize_screen_edge"-->
+		<!--android:layout_marginLeft="@dimen/materialize_screen_edge"-->
+		<!--android:layout_marginRight="@dimen/materialize_screen_edge"-->
+		<!--android:layout_marginStart="@dimen/materialize_screen_edge"-->
+		<!--tools:srcCompat="@drawable/vector_drawable_ic_drag"/>-->
+
+</RelativeLayout>

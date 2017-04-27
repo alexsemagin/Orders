@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_for_headers">#a8a8a8</color>
+    <color name="price_yellow">#F8FC80</color>
+    <color name="red">#F80000</color>
+    <color name="blue">#000080</color>
+    <color name="blue_kimberly">#ADADED</color>
+    <color name="blue_kimberly_light">#6666E3</color>
+    <color name="green">#008000</color>
+    <color name="orange">#ff8d15</color>
+    <color name="orange_selection">#ffbb33</color>
+    <color name="grey_background">#edebe6</color>
+    <color name="grey_line">#d4d4d4</color>
+    <color name="grey_text">#777</color>
+    <color name="grey_selection">#AAA</color>
+    <color name="white">#FFF</color>
+    <color name="dark_grey">#999</color>
+    <color name="black">#000</color>
+    <color name="light_green">#eff5e6</color>
+    <color name="orange_button">#ffbb33</color>
+    <color name="orange_button_dark">#d88b2b</color>
+
+
+    <!-- material colors -->
+    <color name="black_87">#de000000</color>
+    <color name="black_54">#8a000000</color>
+
+    <!-- black color font variations -->
+    <color name="font_color_display_4">@color/black_54</color>
+    <color name="font_color_display_3">@color/black_54</color>
+    <color name="font_color_display_2">@color/black_54</color>
+    <color name="font_color_display_1">@color/black_54</color>
+    <color name="font_color_headline">@color/black_87</color>
+    <color name="font_color_title">@color/black_87</color>
+    <color name="font_color_subheading">@color/black_87</color>
+    <color name="font_color_body_2">@color/black_87</color>
+    <color name="font_color_body_1">@color/black_87</color>
+    <color name="font_color_caption">@color/black_54</color>
+    <color name="font_color_menu">@color/black_87</color>
+    <color name="font_color_button">@color/black_87</color>
+
+    <!-- test -->
+    <color name="button_color">#3a56d2</color>
+
+
+    <!-- colors -->
+
+    <!--main theme colors-->
+    <color name="primary">@color/md_blue_600</color>
+    <color name="primary_dark">@color/md_blue_900</color>
+    <color name="accent">@color/md_orange_600</color>
+    <color name="accent_light">@color/md_orange_300</color>
+    <!--<color name="accent_disabled">#b0951357</color>-->
+    <!--<color name="text_highlight">#66ff4132</color>-->
+
+    <color name="grey">@color/md_grey_800</color>
+    <color name="grey_light">@color/md_grey_600</color>
+    <color name="grey_dark">@color/md_grey_900</color>
+
+    <color name="ic_main">@color/md_grey_600</color>
+
+    <color name="disabled_text_color">#9D9FA2</color>
+
+    <color name="mod_primary">@color/design_green_fern</color>
+    <color name="mod_primary_dark">@color/design_green_forest</color>
+    <color name="mod_primary_dim">@color/design_green_fern_dim</color>
+
+    <!-- menu items colors -->
+    <color name="menu_dir_border">@color/design_brown_dark</color>
+    <color name="menu_dir_text">@color/design_brown_dark</color>
+    <color name="menu_dir_background">@color/design_brown_light</color>
+    <color name="menu_dir_disabled_border">@color/design_brown_dim1</color>
+    <color name="menu_dir_disabled_text">@color/design_brown_dim1</color>
+    <color name="menu_dir_disabled_background">@color/design_brown_dim2</color>
+    <color name="menu_dir_selected_background">@color/design_brown</color>
+    <color name="menu_dir_selected_text">@color/design_white</color>
+
+    <color name="tile_border">@color/design_grey_blue_dark</color>
+    <color name="tile_background">@color/design_white</color>
+    <color name="tile_text">@color/design_dark_grey</color>
+    <color name="tile_disabled_border">@color/design_grey_blue_dark</color>
+    <color name="tile_disabled_background">@color/design_grey_blue</color>
+    <color name="tile_disabled_text">@color/design_grey_blue_dark</color>
+    <color name="tile_selected_background">@color/design_grey_100</color>
+    <color name="tile_selected_text">@color/design_white</color>
+
+    <!-- design colors -->
+    <color name="design_red_dark">#d61516</color>
+    <color name="design_red_bright">#ff4133</color>
+    <color name="design_dark_grey">#2b3b4b</color>
+    <color name="design_grey">#808c9c</color>
+    <color name="design_grey_light">#e4e8eb</color>
+    <color name="design_white">#fff</color>
+    <color name="design_orange">#ffcc01</color>
+    <color name="design_green">#66cc9a</color>
+    <color name="design_text_color_secondary">@color/black_54</color>
+    <color name="design_green_fern">#66cc9a</color>
+    <color name="design_green_fern_dim">#b2cca1</color>
+    <color name="design_green_forest">#339967</color>
+    <color name="design_secondary_font_color">#81899c</color>
+    <color name="design_brown">#a07222</color>
+    <color name="design_brown_dark">#996600</color>
+    <color name="design_brown_light">#f2e8b9</color>
+    <color name="design_brown_dim1">#ccc3b0</color>
+    <color name="design_brown_dim2">#ddd9c4</color>
+    <color name="design_grey_blue">#f1f6f8</color>
+    <color name="design_grey_blue_dark">#e4e8ea</color>
+    <color name="design_grey_100">#808b9c</color>
+    <!--<color name="md_grey_600">#757575</color>-->
+    <!--<color name="chart_gray">#e0e0e0</color>-->
+
+    <!--circles colors-->
+    <color name="red_circle">#ff3334</color>
+    <color name="yellow_circle">#fecb32</color>
+    <color name="green_circle">@color/design_green_fern</color>
+    <color name="blue_circle">#6899ff</color>
+    <color name="grey_cirle">@color/design_grey_light</color>
+    <color name="grey_placeholder">#BDBDBD</color>
+
+
+
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sort_by_all_actions"
+            android:title="@string/filter_all_actions"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/sort_by_action_sign_in"
+            android:showAsAction="ifRoom"
+            android:title="@string/filter_login"
+            tools:ignore="AppCompatResource" />
+        <item
+            android:id="@+id/sort_by_action_sign_out"
+            android:showAsAction="ifRoom"
+            android:title="@string/filter_logout"
+            tools:ignore="AppCompatResource" />
+        <item
+            android:id="@+id/sort_by_action_order_attach"
+            android:showAsAction="ifRoom"
+            android:title="@string/filter_order_add"
+            tools:ignore="AppCompatResource" />
+
+        <item
+            android:id="@+id/sort_by_action_order_detach"
+            android:showAsAction="ifRoom"
+            android:title="@string/filter_order_detach"
+            tools:ignore="AppCompatResource" />
+        <item
+            android:id="@+id/sort_by_action_order_success"
+            android:showAsAction="ifRoom"
+            android:title="@string/filter_success"
+            tools:ignore="AppCompatResource" />
+        <item
+            android:id="@+id/sort_by_action_order_canceled"
+            android:showAsAction="ifRoom"
+            android:title="@string/filter_order_canceled"
+            tools:ignore="AppCompatResource" />
+        <item
+            android:id="@+id/sort_by_action_put_cash"
+            android:showAsAction="ifRoom"
+            android:title="@string/filter_put_cashbox"
+            tools:ignore="AppCompatResource" />
+    </group>
+</menu>

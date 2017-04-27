@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#eceff1"
+	android:descendantFocusability="blocksDescendants"
+	android:paddingBottom="@dimen/materialize_screen_edge"
+	android:paddingTop="@dimen/materialize_screen_edge">
+
+	<FrameLayout
+		android:id="@+id/image_util_container"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_centerInParent="true"
+		android:layout_marginRight="@dimen/materialize_screen_edge"
+		android:layout_marginEnd="@dimen/materialize_screen_edge">
+
+		<ImageView
+			android:id="@+id/dismiss_icon"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:clickable="true"
+			android:contentDescription="@null"
+			android:scaleType="center"
+			app:srcCompat="@drawable/vector_drawable_cancel_order"/>
+
+	</FrameLayout>
+
+	<LinearLayout
+		android:id="@+id/title_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_marginLeft="@dimen/materialize_screen_edge"
+		android:layout_marginStart="@dimen/materialize_screen_edge"
+		android:layout_toLeftOf="@id/image_util_container"
+		android:layout_toStartOf="@id/image_util_container"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ellipsize="marquee"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:maxLines="1"
+			android:text="Showcase of the library capabilities"
+			android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+		<TextView
+			android:id="@+id/subtitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+			android:text=" strongly recommend to read the new Wiki pages, where you can find a comprehensive Tutorial*.
+Wiki pages have been completely reviewed to support all the coming features of version 5.0.0."
+			android:textAppearance="@style/TextAppearance.AppCompat.Notification.Info"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

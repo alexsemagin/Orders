@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/button_height"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:textColor="@drawable/text_color"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/vDeviderVer"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/design_grey_light" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vDeviderHor"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/design_grey_light" />
+</LinearLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_conn_settings_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/materialize_screen_edge">
+
+                <TextView
+                    android:id="@+id/tv_conn_settings_head"
+                    android:text="@string/pref_connection_settings_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="?android:textAppearanceSmallInverse" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_serv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/materialize_screen_edge">
+
+                <TextView
+                    android:id="@+id/tv_serv_addr_prim_txt"
+                    android:text="@string/pref_server_address_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_serv_addr_sec_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Small" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_alt_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/materialize_screen_edge">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/swch_alt_serv"
+                    android:layout_toStartOf="@+id/swch_alt_serv"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_alt_serv_prim_txt"
+                        android:text="@string/pref_alternative_server_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                </LinearLayout>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/swch_alt_serv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    app:theme="@style/ColorSwitchStyle" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_alt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/materialize_screen_edge">
+
+                <TextView
+                    android:id="@+id/tv_alt_address_prim_txt"
+                    android:text="@string/pref_alternative_server_address_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_alt_address_sec_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall" />
+            </LinearLayout>
+
+            <include layout="@layout/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/materialize_screen_edge"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/text_settings_locations"
+                    android:textAppearance="?android:textAppearanceSmallInverse" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_location_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/materialize_screen_edge"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_address_point_delivery"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_point_deliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_not_set"
+                    android:textAppearance="?android:textAppearanceSmall" />
+            </LinearLayout>
+
+
+            <include layout="@layout/divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_display_settings_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/materialize_screen_edge">
+
+                <TextView
+                    android:id="@+id/tv_display_settings_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pref_display_settings_header"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="?android:textAppearanceSmallInverse" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_organization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/materialize_screen_edge">
+
+                <TextView
+                    android:id="@+id/tv_organization_prim_txt"
+                    android:text="@string/pref_organization_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_organization_sec_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/materialize_screen_edge">
+
+                <TextView
+                    android:id="@+id/tv_currency_prim_txt"
+                    android:text="@string/pref_currency_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_currency_sec_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall" />
+            </LinearLayout>
+
+            <include layout="@layout/divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_alert_settings_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/materialize_screen_edge">
+
+                <TextView
+                    android:id="@+id/tv_alert_settings_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pref_alert_settings_header"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="?android:textAppearanceSmallInverse" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_post_melody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/materialize_screen_edge">
+
+                <TextView
+                    android:id="@+id/tv_post_melody_prim_txt"
+                    android:text="@string/pref_melody_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_post_melody_sec_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

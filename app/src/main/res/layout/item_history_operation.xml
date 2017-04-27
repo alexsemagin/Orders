@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/materialize_screen_edge"
+    android:paddingStart="@dimen/materialize_screen_edge"
+    android:paddingRight="@dimen/materialize_screen_edge"
+    android:paddingEnd="@dimen/materialize_screen_edge"
+    android:paddingTop="@dimen/main_padding_16"
+    android:paddingBottom="@dimen/main_padding_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/fr_history_time"
+        android:layout_toStartOf="@+id/fr_history_time">
+
+        <ImageView
+            android:id="@+id/iv_history_item_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingStart="-4dp"
+            android:paddingLeft="-4dp"
+            android:layout_gravity="center_vertical|start"
+            app:srcCompat="@drawable/vector_drawable_sum_pay"
+            tools:ignore="RtlSymmetry" />
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_history_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title Title Title"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_history_item_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title Title Title"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/fr_history_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:minWidth="80dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_history_time_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:gravity="end"/>
+        <TextView
+            android:id="@+id/tv_history_time_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:gravity="end"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

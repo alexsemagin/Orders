@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/menu_map_list"-->
+        <!--android:icon="@drawable/vector_map"-->
+        <!--android:title="@string/menu_map_list"-->
+        <!--app:showAsAction="always" />-->
+
+    <group
+
+        android:id="@+id/filter_menu" android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/sort_by_time"
+            android:title="@string/sort_by_time_title"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/sort_by_distance"
+            android:title="@string/sort_by_distance_title"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/sort_by_sum"
+            android:title="@string/sort_by_sum_title"
+            app:showAsAction="never" />
+
+    </group>
+
+
+</menu>

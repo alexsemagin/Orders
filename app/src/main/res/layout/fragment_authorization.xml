@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_startscreen"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/auth_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                tools:ignore="UnusedAttribute" />
+            <!--android:layout_height="wrap_content"-->
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+
+                android:id="@+id/tvAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_weight="0.45"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/title_splash"
+                android:textSize="@dimen/font_size_title"
+                tools:ignore="NestedWeights" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.50">
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--android:weightSum="1">-->
+                <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="0.5"/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="0.5"-->
+
+                    <!--android:scaleType="centerCrop"-->
+                    <!--android:src="@drawable/bg_startscreen" />-->
+
+            <!--</LinearLayout>-->
+
+            <ImageView
+
+                android:id="@+id/ivAppIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@drawable/running_man_background"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_app_svg_new"/>
+
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/center"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingEnd="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingStart="24dp">
+
+        <TextView
+            android:id="@+id/input_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/text_input_pass"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_gravity="end"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+
+            <ImageView
+
+                android:id="@+id/confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/my_ripple"
+                android:visibility="visible"
+                app:srcCompat="@drawable/done" />
+
+            <ProgressBar
+                android:id="@+id/fragment_autorization_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/number_layout_grid_background_vertical" />
+    </FrameLayout>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/keyboard_main"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/center"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="12dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <include layout="@layout/number_keyboard_grid" />
+
+        <include layout="@layout/number_keyboard" />
+
+        <FrameLayout
+            android:id="@+id/demo"
+            android:padding="@dimen/main_padding_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/my_ripple">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/demo_button_text"
+                android:textColor="@color/colorPrimaryDark"
+                />
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/demo"-->
+    <!--android:gravity="bottom"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/keyboard_main">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_demo"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:background="@drawable/my_ripple"-->
+    <!--android:clickable="true"-->
+    <!--android:padding="@dimen/main_padding_16"-->
+    <!--android:text="@string/demo_button_text"-->
+    <!--android:textColor="@color/colorPrimaryDark"-->
+    <!--android:textSize="20sp" />-->
+    <!--</FrameLayout>-->
+
+
+</RelativeLayout>
+
+

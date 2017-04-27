@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/icMain"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="@dimen/main_padding_16"
+        android:layout_marginLeft="@dimen/materialize_screen_edge"
+        android:layout_marginStart="@dimen/materialize_screen_edge"
+        app:srcCompat="@drawable/vector_drawable_sum_pay"
+        tools:ignore="RtlSymmetry" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/materialize_screen_edge"
+        android:paddingStart="@dimen/materialize_screen_edge"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="@dimen/main_padding_16"
+        android:paddingTop="@dimen/main_padding_16">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            tools:ignore="RtlHardcoded">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal"
+                android:paddingLeft="32dp"
+                android:paddingStart="32dp">
+
+
+
+                <!--<Space-->
+                <!--android:layout_width="8dp"-->
+                <!--android:layout_height="match_parent" />-->
+
+                <TextView
+                    android:id="@+id/base_simple_tv_top_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:minWidth="88dp"
+                    android:text="Title Title Title"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/base_simple_tv_top_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="Title Title Title"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/base_simple_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sub title sub title"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/base_simple_tv_sub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sub title sub title"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/base_simple_right_zone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minWidth="80dp"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/base_simple_tv_right_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|center_vertical"
+                android:minHeight="@dimen/size_ic"
+                android:text="qwerty"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/base_simple_tv_right_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="qwerty"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/base_simple_tv_right_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text=""
+                android:textAppearance="?android:textAppearanceSmall" />
+
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/drag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:paddingRight="@dimen/materialize_screen_edge"
+            android:paddingEnd="@dimen/materialize_screen_edge"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:paddingEnd="-8dp"
+                android:paddingRight="-8dp"
+                app:srcCompat="@drawable/vector_drawable_ic_drag" />
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/drag_padding"
+            android:layout_width="@dimen/materialize_screen_edge"
+            android:layout_height="match_parent">
+
+        </View>
+
+
+    </LinearLayout>
+</FrameLayout>
